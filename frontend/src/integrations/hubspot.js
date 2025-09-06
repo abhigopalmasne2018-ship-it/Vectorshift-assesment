@@ -59,7 +59,7 @@ export const HubSpotIntegration = ({ user, org, integrationParams, setIntegratio
 
     useEffect(() => {
         setIsConnected(integrationParams?.credentials ? true : false)
-    }, []);
+    }, [integrationParams?.credentials]);
 
     return (
         <>

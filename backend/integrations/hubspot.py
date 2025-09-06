@@ -18,7 +18,7 @@ CLIENT_SECRET = '70a585aa-818c-41a2-9ee0-26e02c7557f8'  # Replace with your actu
 REDIRECT_URI = 'http://localhost:8000/integrations/hubspot/oauth2callback'
 
 # HubSpot OAuth scopes - adjust based on what data you need
-SCOPES = 'contacts%20companies%20deals%20tickets%20crm.objects.contacts.read%20crm.objects.companies.read%20crm.objects.deals.read%20crm.objects.tickets.read'
+SCOPES = 'crm.objects.contacts.read%20crm.objects.companies.read%20crm.objects.deals.read%20crm.objects.tickets.read'
 
 authorization_url = f'https://app.hubspot.com/oauth/authorize?client_id={CLIENT_ID}&redirect_uri={REDIRECT_URI}&scope={SCOPES}'
 
